@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+}
+
+h3{
+    letter-spacing: 4px;
+}
+
+h3, p {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 80%;
+    color: hsl(212, 21%, 14%);
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    margin: 10vh auto;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card-info{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.card-image-mobile{
+    display: none;
+}
+
+.card-image{
+    width: 50%;
+    display: flex;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.price{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-price{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    font-size: 2.5rem;
+}
+
+.old-price{
+    align-self: center;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.add-button{
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.add-button:hover{
+    background-color: hsl(157, 36%, 22%);
+    cursor: pointer;
+}
+
+.add-button img{
+    margin-right: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1200px) {
+    .container {
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+    }
+  
+    .card-image,
+    .card-info {
+      width: 40%;
+    }
+  
+    .card-info {
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .card-image img {
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+  
+    .card-image-desktope {
+      display: none;
+    }
+  
+    .card-image-mobile {
+      display: block;
+    }
+}
+
+@media (max-width: 376px) {
+    .card-image,
+    .card-info {
+      width: 90%;
+    }
+    .card-image img{
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+}
